@@ -27,7 +27,7 @@
     ### but not yet assigned by those RIRs to ISPs, end-users, etc.
     ### Updated every four hours.
     
-    # :set url "https://www.team-cymru.org/Services/Bogons/fullbogons-ipv4.txt"
+    :set url "https://www.team-cymru.org/Services/Bogons/fullbogons-ipv4.txt"
     
     ###########################################################################
     
@@ -54,5 +54,5 @@
             /ip firewall address-list add address=$line list=$addressListName;
         }
         
-    } while ($lineEnd < $contentLen - 2)
+    } while=($lineEnd < $contentLen - 2)
 }
